@@ -1388,7 +1388,7 @@
 				)
 			)
 		)
-		(symbol "Device:Q_NMOS_GDSD"
+		(symbol "Device:Q_NMOS_GDS"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
@@ -1403,7 +1403,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NMOS_GDSD"
+			(property "Value" "Q_NMOS_GDS"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -1430,7 +1430,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "N-MOSFET transistor, gate/drain/source, drain connected to mounting plane"
+			(property "Description" "N-MOSFET transistor, gate/drain/source"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1448,7 +1448,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NMOS_GDSD_0_1"
+			(symbol "Q_NMOS_GDS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -1511,7 +1511,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 2.54 2.54) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -1523,7 +1523,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 2.54) (xy 2.54 2.54) (xy 2.54 1.778)
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -1615,7 +1615,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDSD_1_1"
+			(symbol "Q_NMOS_GDS_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1663,24 +1663,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2209,6 +2191,12 @@
 		)
 	)
 	(junction
+		(at 81.28 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6941c776-fd9d-4667-a27f-0f5cfbf5184c")
+	)
+	(junction
 		(at 107.95 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2227,6 +2215,10 @@
 		(uuid "eca945fe-434b-4471-81ce-23c742a723b8")
 	)
 	(no_connect
+		(at 105.41 138.43)
+		(uuid "44d5c5af-d3e0-4521-b7a3-7f43e6fe3a1f")
+	)
+	(no_connect
 		(at 156.21 146.05)
 		(uuid "72d75e9c-11b6-4041-8138-dc035b6189b4")
 	)
@@ -2235,8 +2227,8 @@
 		(uuid "7ab154e9-38a5-4463-9513-c682187bcfeb")
 	)
 	(no_connect
-		(at 81.28 50.8)
-		(uuid "bc87d6ef-3b51-4c67-94be-3bce83fa9200")
+		(at 105.41 135.89)
+		(uuid "8466009e-1946-413a-8b8d-24cdf8863af8")
 	)
 	(wire
 		(pts
@@ -2270,6 +2262,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 31.75) (xy 81.28 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bde5fee-c81f-4769-b670-19ced462a272")
+	)
+	(wire
+		(pts
 			(xy 49.53 127) (xy 52.07 127)
 		)
 		(stroke
@@ -2277,16 +2279,6 @@
 			(type default)
 		)
 		(uuid "0e19e342-04ff-4468-bf6f-569518917d03")
-	)
-	(wire
-		(pts
-			(xy 46.99 35.56) (xy 46.99 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11ac567f-9a79-45e8-ad8b-c838bd441839")
 	)
 	(wire
 		(pts
@@ -2380,16 +2372,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 36.83) (xy 68.58 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30c4fcf4-8ce6-4e20-a2fb-0aba021b4f23")
-	)
-	(wire
-		(pts
 			(xy 85.09 85.09) (xy 85.09 88.9)
 		)
 		(stroke
@@ -2417,6 +2399,16 @@
 			(type default)
 		)
 		(uuid "3a0ccecb-676a-4f23-8721-709020106222")
+	)
+	(wire
+		(pts
+			(xy 81.28 31.75) (xy 83.82 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406c857b-e195-48fb-9ce9-c1b597d5d7ae")
 	)
 	(wire
 		(pts
@@ -2457,16 +2449,6 @@
 			(type default)
 		)
 		(uuid "52ce0d67-313a-4b20-9402-18d96262cb07")
-	)
-	(wire
-		(pts
-			(xy 66.04 35.56) (xy 66.04 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5be8e34c-ba4f-4247-9044-b97086063c88")
 	)
 	(wire
 		(pts
@@ -2600,6 +2582,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 36.83) (xy 81.28 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "884b5667-12a4-4b77-ad28-913ebeeaefb5")
+	)
+	(wire
+		(pts
 			(xy 107.95 41.91) (xy 107.95 43.18)
 		)
 		(stroke
@@ -2637,16 +2629,6 @@
 			(type default)
 		)
 		(uuid "97300fe0-c9c6-4d6c-97b1-ec9dc6d32089")
-	)
-	(wire
-		(pts
-			(xy 68.58 35.56) (xy 68.58 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9035f00-321d-419c-80e7-8ef2e3bef2ea")
 	)
 	(wire
 		(pts
@@ -2697,6 +2679,16 @@
 			(type default)
 		)
 		(uuid "bc90d9b5-a2ab-4f32-a070-7d87160fe32e")
+	)
+	(wire
+		(pts
+			(xy 83.82 36.83) (xy 81.28 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c03d2336-bad6-4ffc-83ed-d41faf3702f3")
 	)
 	(wire
 		(pts
@@ -2770,7 +2762,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 48.26) (xy 83.82 50.8)
+			(xy 81.28 48.26) (xy 81.28 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2790,16 +2782,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 36.83) (xy 46.99 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9622f86-379e-44a9-9551-ba828713a8f9")
-	)
-	(wire
-		(pts
 			(xy 31.75 54.61) (xy 31.75 57.15)
 		)
 		(stroke
@@ -2807,16 +2789,6 @@
 			(type default)
 		)
 		(uuid "ec5f972e-0f91-4980-ae55-74aeb1ad0b68")
-	)
-	(wire
-		(pts
-			(xy 44.45 35.56) (xy 44.45 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f12979a7-b04a-42b2-8e1d-fd91067b5aa1")
 	)
 	(wire
 		(pts
@@ -2841,8 +2813,8 @@
 		(uuid 1594e9a7-b641-474c-911a-98527df1b0dc)
 	)
 	(rectangle
-		(start 27.94 31.75)
-		(end 55.88 41.91)
+		(start 62.23 27.94)
+		(end 97.79 38.1)
 		(stroke
 			(width 0)
 			(type default)
@@ -2900,21 +2872,9 @@
 		)
 		(uuid d5b894b2-8704-400b-bf83-497db35f741d)
 	)
-	(rectangle
-		(start 58.42 31.75)
-		(end 82.55 41.91)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid fe765aa6-e7f7-47a8-8397-d659781c5ed8)
-	)
 	(text_box "POWER\n"
 		(exclude_from_sim no)
-		(at 27.94 26.67 0)
+		(at 27.94 27.94 0)
 		(size 15.24 3.81)
 		(stroke
 			(width 0)
@@ -3038,7 +2998,7 @@
 	)
 	(text "See vSMT notes"
 		(exclude_from_sim no)
-		(at 29.464 39.878 0)
+		(at 63.754 36.068 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3057,17 +3017,6 @@
 			(justify left bottom)
 		)
 		(uuid "92d9b37d-14b0-4271-843f-4c17ba78ac7c")
-	)
-	(text "same same\n"
-		(exclude_from_sim no)
-		(at 61.214 39.878 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9dfc684e-13ed-489a-9184-c0b748f6a12f")
 	)
 	(text "measures V_USB\nto check for\nactive charging"
 		(exclude_from_sim no)
@@ -3125,7 +3074,7 @@
 		(uuid "0c0de0f3-93ca-4cd8-8702-1382f3158190")
 	)
 	(label "GATED_GND"
-		(at 83.82 48.26 0)
+		(at 81.28 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3156,17 +3105,6 @@
 			(justify left bottom)
 		)
 		(uuid "1c8a7f38-3dc1-43de-af14-a136d88b03e7")
-	)
-	(label "V_BAT+"
-		(at 66.04 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "245ed760-d3ee-42eb-838e-c8abd6e06200")
 	)
 	(label "3V3"
 		(at 102.87 153.67 180)
@@ -3300,6 +3238,17 @@
 		)
 		(uuid "493e4837-4927-4846-930f-c7bd745dd994")
 	)
+	(label "V_LED"
+		(at 83.82 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bddc71f-2853-483c-95a0-e19b927c484b")
+	)
 	(label "IO21"
 		(at 80.01 100.33 180)
 		(fields_autoplaced yes)
@@ -3355,17 +3304,6 @@
 		)
 		(uuid "590493ce-4d1f-41a4-8715-54ab3d4c7a27")
 	)
-	(label "V_BAT+"
-		(at 46.99 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5a96845e-b78d-4a9c-b8fe-e64f62273f82")
-	)
 	(label "GATED_GND"
 		(at 102.87 156.21 180)
 		(fields_autoplaced yes)
@@ -3387,17 +3325,6 @@
 			(justify left bottom)
 		)
 		(uuid "6dee29a1-7d46-487e-a419-8b7e501479a5")
-	)
-	(label "ESP32_BAT+"
-		(at 68.58 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fe3bfb9-1dcd-40e1-9f91-15dbd9798a78")
 	)
 	(label "V_USB"
 		(at 52.07 129.54 0)
@@ -3433,7 +3360,7 @@
 		(uuid "8b35623f-c2f2-4f15-acfd-415790e43010")
 	)
 	(label "BAT+_TERMINAL"
-		(at 44.45 35.56 180)
+		(at 78.74 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3442,6 +3369,17 @@
 			(justify right bottom)
 		)
 		(uuid "8b90ee03-c9d9-424b-ae15-5c6a204599db")
+	)
+	(label "ESP32_BAT+"
+		(at 83.82 31.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9cc62fe3-0ae8-4d15-9efd-3a01f2e52c51")
 	)
 	(label "BAT+_TERMINAL"
 		(at 31.75 54.61 0)
@@ -3934,6 +3872,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_NMOS_GDS")
+		(at 78.74 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "117a53fe-d75a-48e6-b8c3-27cf186e4c5d")
+		(property "Reference" "Q2"
+			(at 85.09 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Q_NMOS_GDS"
+			(at 84.582 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 83.82 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/drain/source"
+			(at 78.74 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCS" "C357852"
+			(at 78.74 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a6e2752-8f71-4fb3-8831-13453e501b05")
+		)
+		(pin "1"
+			(uuid "4fa2686d-5f25-4751-8069-d6a6661914f5")
+		)
+		(pin "3"
+			(uuid "0dbec44d-4586-4cbb-81f0-9a7486d9dd01")
+		)
+		(instances
+			(project "PovPOI vSMT"
+				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 181.61 96.52 0)
 		(unit 1)
@@ -4071,7 +4091,7 @@
 			(uuid "6a42d552-42e7-4eef-8560-60559d64347b")
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "J3")
 					(unit 1)
@@ -4149,7 +4169,7 @@
 			(uuid "27b90e7a-2c67-4af1-8ac5-d380fb196e30")
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "J5")
 					(unit 1)
@@ -4212,7 +4232,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C149504"
+			(at 68.58 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC" "0805"
 			(at 68.58 55.88 0)
 			(effects
 				(font
@@ -4293,7 +4322,7 @@
 			)
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "H4")
 					(unit 1)
@@ -4517,7 +4546,7 @@
 			(uuid "02772e11-95bf-49d3-8023-431fa6d2d37b")
 		)
 		(instances
-			(project ""
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "TP1")
 					(unit 1)
@@ -4580,7 +4609,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C149504"
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC" "0805"
 			(at 107.95 46.99 0)
 			(effects
 				(font
@@ -4659,7 +4697,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C149504"
+			(at 40.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC" "0805"
 			(at 40.64 83.82 0)
 			(effects
 				(font
@@ -4940,7 +4987,7 @@
 			(uuid "4ed1028e-04f1-49a3-a17f-ea631d88edde")
 		)
 		(instances
-			(project ""
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "U2")
 					(unit 1)
@@ -5030,7 +5077,7 @@
 			(uuid "83eb13e0-453e-4707-9fb5-4d2a1dc57197")
 		)
 		(instances
-			(project ""
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "J2")
 					(unit 1)
@@ -5162,6 +5209,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLC" "0805"
+			(at 53.34 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a417aa95-b85b-414a-a5b2-528e113df5d6")
 		)
@@ -5169,7 +5225,7 @@
 			(uuid "4db3a57a-1ee8-483b-b681-bd2ccd60cb9e")
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "C2")
 					(unit 1)
@@ -5302,7 +5358,7 @@
 			)
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "H2")
 					(unit 1)
@@ -5374,85 +5430,9 @@
 			(uuid "21ca7ff4-6393-448d-9cf4-103e36fec4e7")
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "BatteryConn1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NMOS_GDSD")
-		(at 78.74 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d12d7e77-d406-4dc9-849e-06f1d9ac908b")
-		(property "Reference" "Q1"
-			(at 85.09 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "Q_NMOS_GDSD"
-			(at 83.82 58.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin4"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/drain/source, drain connected to mounting plane"
-			(at 78.74 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cabf5054-5e01-4e79-8eef-74fd9ddc2a6d")
-		)
-		(pin "4"
-			(uuid "feffedd9-1a29-4b91-a4c6-3f420183f0bc")
-		)
-		(pin "2"
-			(uuid "d7d41e66-6835-4012-85f6-e9eea5798473")
-		)
-		(pin "3"
-			(uuid "9c5be521-6778-47dc-ba06-fc80c1164aa6")
-		)
-		(instances
-			(project ""
-				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -5514,7 +5494,7 @@
 			)
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "H3")
 					(unit 1)
@@ -5654,7 +5634,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17539"
+			(at 107.95 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC" "0805"
 			(at 107.95 57.15 0)
 			(effects
 				(font
@@ -5735,7 +5724,7 @@
 			)
 		)
 		(instances
-			(project "PovPOI"
+			(project "PovPOI vSMT"
 				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
 					(reference "H1")
 					(unit 1)
