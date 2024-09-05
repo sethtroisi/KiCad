@@ -1797,6 +1797,139 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -2482,6 +2615,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 50.8) (xy 76.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876da62d-19d2-413e-901e-0d48060ac05c")
+	)
+	(wire
+		(pts
 			(xy 35.56 95.25) (xy 48.26 95.25)
 		)
 		(stroke
@@ -2519,6 +2662,16 @@
 			(type default)
 		)
 		(uuid "8e57ef99-2232-46aa-aa82-2ef9ebf66efb")
+	)
+	(wire
+		(pts
+			(xy 57.15 50.8) (xy 62.23 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92b41006-18b0-4dfd-b29b-fe9440902a9f")
 	)
 	(wire
 		(pts
@@ -2910,7 +3063,7 @@
 		)
 		(uuid "53591b14-4a67-4067-81ee-536aafebcdba")
 	)
-	(text "Plans for V3\n- Footprint on bottom for switch\n- Footprint for button next to switch\n\nFuture\n- Either I2c or SMT for accelerometer\n- Run Cap Sensor wires towards top (can just use the inside pin row)\n- Measure amp draw @ 4v for 36  WS2812s (obvs black)"
+	(text "Plans for V3\n\n- Footprint on bottom for switch\n- Footprint for button next to switch\n- Either I2c or SMT for accelerometer\n- Top Side & Bottom Side labels\n- Better Mount Holes\n\nPlans for V4\n- Run Cap Sensor wires towards top\n"
 		(exclude_from_sim no)
 		(at 103.886 70.612 0)
 		(effects
@@ -2975,6 +3128,17 @@
 			(justify right bottom)
 		)
 		(uuid "01e0eb9d-a226-40c9-badf-4b1e043e2edd")
+	)
+	(label "3V3"
+		(at 57.15 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "064326aa-29e8-45c7-a741-9c094eea9917")
 	)
 	(label "20"
 		(at 72.39 97.79 0)
@@ -3393,6 +3557,17 @@
 			(justify left bottom)
 		)
 		(uuid "d1d3f427-48e6-49a2-b5ad-a1b954936204")
+	)
+	(label "17"
+		(at 76.2 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d39724e0-ae74-4c97-8c4d-698c6b71f984")
 	)
 	(label "IO4"
 		(at 110.49 52.07 0)
@@ -3837,7 +4012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Angled_CK_OS102011MA1Q"
 			(at 57.15 39.37 0)
 			(effects
 				(font
@@ -3911,7 +4086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -4088,6 +4263,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 67.31 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a6809f2-4d03-432d-8fb8-cfbdf3aa40ee")
+		(property "Reference" "SW2"
+			(at 67.818 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 67.31 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3c85134c-9264-44cb-a964-3bdb391b0b46")
+		)
+		(pin "1"
+			(uuid "d4c06405-5133-4d92-9c15-964643dd2106")
+		)
+		(instances
+			(project ""
+				(path "/9cbb567e-c8f8-42fb-9f8f-dc1b70b902c7"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 107.95 46.99 180)
 		(unit 1)
@@ -4189,7 +4431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
 			(at 165.1 57.15 0)
 			(effects
 				(font
@@ -4327,7 +4569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
 			(at 165.1 64.77 0)
 			(effects
 				(font
@@ -4463,7 +4705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
 			(at 160.02 64.77 0)
 			(effects
 				(font
@@ -4784,7 +5026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
 			(at 160.02 69.85 0)
 			(effects
 				(font
