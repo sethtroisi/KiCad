@@ -1,0 +1,81 @@
+(footprint "ToolingHole_JLCPCB"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Plated Hole as test Point, diameter 2.0mm")
+	(tags "test point plated hole")
+	(property "Reference" "TP1"
+		(at 0 -2.498 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "91da3c86-3853-48d3-85dc-e4d8ffc591b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Tooling Hole"
+		(at 0 2.45 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "38098615-62ec-4e71-91d6-6c42dd2c3a13")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
+		(at 0 -4.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ed10aca-f8d5-467e-91ee-9a0fd728f2e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3d8eab57-8dca-4b95-9a3e-5c6690595fc3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "test point"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1961bacf-b4f9-4501-aebf-247a7170db5c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 1.152 1.152)
+		(drill 1.152)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin 0.148)
+		(clearance 0.248)
+		(uuid "1a4b8a4b-4fbf-4273-955f-13f885334dd1")
+	)
+)
