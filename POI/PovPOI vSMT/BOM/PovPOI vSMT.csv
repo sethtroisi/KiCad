@@ -1,0 +1,5 @@
+Comment,Designator,Footprint,LCSC
+"10K Ω","R1,R2,R5","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","C17414"
+"20K Ω","R3,R4","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","C17544"
+"SW_SPST","SW2,SW3","Button_Switch_SMD:SW_SPST_EVQP7C","C388883"
+"ADXL345BCCZ-RL7","U2","00_PERSONAL:PQFN80P500X300X100-14N","C9667"
